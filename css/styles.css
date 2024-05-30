@@ -1,0 +1,109 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+/* NAVBAR */
+
+html nav {
+    background-color: #111111;
+}
+
+html nav .navBrand {
+    width: 60px;
+    height: 60px;
+}
+
+html nav .brandIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.linkNav a {
+    color: #fff;
+}
+
+.linkNav a:hover {
+    color: #ffd700;
+}
+
+.linkNav a:focus {
+    color: #ffd700;
+}
+
+a .activo {
+    color: #ffd700;
+}
+
+div .botonNav {
+    background-color: #ffd700;
+}
+
+div .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* BODY */
+
+html body {
+    background-color: #000;
+    color: #fff;
+}
+
+h1 .subtitulo {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-style: italic;
+    color: #ffd700;
+    vertical-align: top;
+}
+
+h1 .titulo {
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-style: italic;
+    color: #fff;
+    vertical-align: bottom;
+}
+
+.tituloPages h1 {
+    color: #ffd700;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* HABILIDADES */
+
+.borderHab {
+    border: 2 rem solid #ffd700;
+}
+
+/* FORMULARIO */
+
+.checkForm:checked {
+    background-color: #ffd700;
+}
+
+.botonForm {
+    background-color: #ffd700;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.botonForm:hover {
+    background-color: #fff;
+    color:#000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #111111;
+}
