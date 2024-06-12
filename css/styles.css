@@ -1,109 +1,165 @@
+/* GLOBAL */
 * {
-    padding: 0%;
-    margin: 0%;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #f5f5f5;
 }
 
-/* NAVBAR */
-
-html nav {
-    background-color: #111111;
-}
-
-html nav .navBrand {
-    width: 60px;
-    height: 60px;
-}
-
-html nav .brandIcon {
-    width: 60px;
-    height: 60px;
-}
-
-.linkNav a {
-    color: #fff;
-}
-
-.linkNav a:hover {
-    color: #ffd700;
-}
-
-.linkNav a:focus {
-    color: #ffd700;
-}
-
-a .activo {
-    color: #ffd700;
-}
-
-div .botonNav {
-    background-color: #ffd700;
-}
-
-div .navbar-toggler:focus {
-    box-shadow: none;
-}
-
-/* BODY */
-
-html body {
-    background-color: #000;
-    color: #fff;
-}
-
-h1 .subtitulo {
-    font-size: 4rem;
-    text-transform: capitalize;
-    font-style: italic;
-    color: #ffd700;
-    vertical-align: top;
+body {
+  height: 100vh;
 }
 
 h1 .titulo {
-    font-size: 5rem;
-    text-transform: capitalize;
-    font-style: italic;
-    color: #fff;
-    vertical-align: bottom;
+  text-transform: capitalize;
+  font-style: italic;
+  color: #f5f5f5;
+  vertical-align: bottom;
+  font-weight: bold;
 }
 
-.tituloPages h1 {
-    color: #ffd700;
-    font-style: italic;
+h1 .subtitulo {
+  text-transform: capitalize;
+  font-style: italic;
+  color: #ffd700;
+  vertical-align: top;
+  font-weight: bold;
 }
 
-h3 {
-    font-size: 2rem;
+h2 .tituloH2 {
+  font-weight: bold;
+  color: #f5f5f5;
 }
 
-/* HABILIDADES */
-
-.borderHab {
-    border: 2 rem solid #ffd700;
+h3 .tituloH3 {
+  font-weight: bold;
+  color: #ffd700;
 }
 
-/* FORMULARIO */
-
-.checkForm:checked {
-    background-color: #ffd700;
+/* IMAGEN DE FONDO Y GRADIENTE */
+.imagenFondo {
+  background-image: url(../assets/skins/Jhin_OriginalSkin.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.botonForm {
-    background-color: #ffd700;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.botonForm:hover {
-    background-color: #fff;
-    color:#000;
-    font-weight: bold;
-    text-transform: uppercase;
+.gradienteFondo {
+  background-image: radial-gradient(hsla(0, 100%, 0%, 0), #111111);
+  height: 100%;
 }
 
 /* FOOTER */
-
 footer {
-    background-color: #111111;
+  background-color: #111111;
 }
+
+/* NAVBAR */
+nav {
+  background-color: #111111;
+}
+nav .navBrand {
+  width: 60px;
+  height: 60px;
+}
+nav .brandIcon {
+  width: 60px;
+  height: 60px;
+}
+nav .linkNav a {
+  color: #f5f5f5;
+}
+nav .linkNav a .activo {
+  color: #ffd700;
+}
+nav .linkNav a:hover {
+  color: #ffd700;
+}
+nav .linkNav a:focus {
+  color: #ffd700;
+}
+nav .botonNav {
+  background-color: #ffd700;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ANIMACION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animacionTitulo {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animacionSubtitulo {
+  animation: fadeIn 6s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulsoTexto {
+  animation: pulse 1s;
+}
+
+/* HISTORIA */
+.nombrePersonajes {
+  font-weight: 400;
+  color: #ffd700;
+}
+
+.imagenPersonajes {
+  border: 2px solid #f5f5f5;
+}
+
+/* HABILIDADES */
+.nombreHabilidad {
+  color: #ffd700;
+}
+
+.cuadroHabilidad {
+  background-color: #111111;
+  border: 2px solid #f5f5f5;
+}
+
+/* ASPECTOS */
+div #carouselExampleFade {
+  border: 2px solid #f5f5f5;
+}
+
+/* FORMULARIO */
+form .checkForm:checked {
+  background-color: #ffd700;
+}
+
+form .botonForm {
+  background-color: #ffd700;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form .botonForm:hover {
+  background-color: #f5f5f5;
+  color: #111111;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */

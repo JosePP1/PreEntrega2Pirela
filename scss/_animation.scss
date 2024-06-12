@@ -1,0 +1,37 @@
+/* ANIMACION */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animacionTitulo {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animacionSubtitulo {
+    animation: fadeIn 6s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulsoTexto {
+    animation: pulse 1s;
+}

@@ -1,0 +1,18 @@
+/* FORMULARIO */
+
+form .checkForm:checked {
+    background-color: $secondaryColor;
+}
+
+form .botonForm {
+    background-color: $secondaryColor;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form .botonForm:hover {
+    background-color: $tertiaryColor;
+    color: $primaryColor;
+    font-weight: bold;
+    text-transform: uppercase;
+}

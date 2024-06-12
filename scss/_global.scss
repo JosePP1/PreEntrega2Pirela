@@ -1,0 +1,111 @@
+@mixin brandSizing {
+    width: 60px;
+    height: 60px;
+}
+
+@mixin titulo {
+    text-transform: capitalize;
+    font-style: italic;
+    color: $tertiaryColor;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+
+@mixin subtitulo {
+    text-transform: capitalize;
+    font-style: italic;
+    color: $secondaryColor;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+/* GLOBAL */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: $tertiaryColor;
+}
+
+body {
+    height: 100vh;
+}
+
+h1 .titulo {
+    @include titulo;
+}
+
+h1 .subtitulo {
+    @include subtitulo;
+}
+
+h2 .tituloH2 {
+    font-weight: bold;
+    color: $tertiaryColor;
+}
+
+h3 .tituloH3 {
+    font-weight: bold;
+    color: $secondaryColor;
+}
+
+/* IMAGEN DE FONDO Y GRADIENTE */
+
+.imagenFondo {
+    background-image: url(../assets/skins/Jhin_OriginalSkin.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.gradienteFondo {
+    background-image: radial-gradient(hsla(0, 100%, 0%, 0), #111111);
+    height: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: $primaryColor;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: $primaryColor;
+
+    .navBrand {
+        @include brandSizing;
+    }
+
+    .brandIcon {
+        @include brandSizing;
+    }
+
+    .linkNav a {
+        color: $tertiaryColor;
+
+        .activo {
+            color: $secondaryColor;
+        }
+
+        &:hover {
+            color: $secondaryColor;
+        }
+
+        &:focus {
+            color: $secondaryColor;
+        }
+    }
+
+    .botonNav {
+        background-color: $secondaryColor;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
