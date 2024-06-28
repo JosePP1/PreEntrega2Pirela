@@ -19,6 +19,13 @@
     font-weight: bold;
 }
 
+@mixin navLinks {
+    color: $tertiaryColor;
+    margin: 0 3rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
 /* GLOBAL */
 
 * {
@@ -31,6 +38,10 @@
 
 body {
     height: 100vh;
+}
+
+main {
+    background-color: $primaryColor;
 }
 
 h1 .titulo {
@@ -51,9 +62,16 @@ h3 .tituloH3 {
     color: $secondaryColor;
 }
 
+.carousel-item h5 {
+    color: $secondaryColor;
+    background-color: $quinquinaryColor;
+    width: 40%;
+    border: 1px solid $secondaryColor;
+}
+
 /* IMAGEN DE FONDO Y GRADIENTE */
 
-.imagenFondo {
+/*.imagenFondo {
     background-image: url(../assets/skins/Jhin_OriginalSkin.webp);
     background-size: cover;
     background-position: center;
@@ -64,18 +82,18 @@ h3 .tituloH3 {
 .gradienteFondo {
     background-image: radial-gradient(hsla(0, 100%, 0%, 0), #111111);
     height: 100%;
-}
+}*/
 
 /* FOOTER */
 
 footer {
-    background-color: $primaryColor;
+    background-color: $senaryColor;
 }
 
 /* NAVBAR */
 
 nav {
-    background-color: $primaryColor;
+    background-color: $senaryColor;
 
     .navBrand {
         @include brandSizing;
@@ -86,7 +104,7 @@ nav {
     }
 
     .linkNav a {
-        color: $tertiaryColor;
+        @include navLinks;
 
         .activo {
             color: $secondaryColor;
