@@ -62,28 +62,6 @@ h3 .tituloH3 {
     color: $secondaryColor;
 }
 
-.carousel-item h5 {
-    color: $secondaryColor;
-    background-color: $quinquinaryColor;
-    width: 40%;
-    border: 1px solid $secondaryColor;
-}
-
-/* IMAGEN DE FONDO Y GRADIENTE */
-
-/*.imagenFondo {
-    background-image: url(../assets/skins/Jhin_OriginalSkin.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.gradienteFondo {
-    background-image: radial-gradient(hsla(0, 100%, 0%, 0), #111111);
-    height: 100%;
-}*/
-
 /* FOOTER */
 
 footer {
@@ -126,10 +104,4 @@ nav {
     .navbar-toggler:focus {
         box-shadow: none;
     }
-}
-
-/* IFRAMES */
-
-div .videos {
-    border: 2px solid $tertiaryColor;
 }

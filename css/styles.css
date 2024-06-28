@@ -41,26 +41,6 @@ h3 .tituloH3 {
   color: #ffd700;
 }
 
-.carousel-item h5 {
-  color: #ffd700;
-  background-color: rgba(17, 17, 17, 0.7);
-  width: 40%;
-  border: 1px solid #ffd700;
-}
-
-/* IMAGEN DE FONDO Y GRADIENTE */
-/*.imagenFondo {
-    background-image: url(../assets/skins/Jhin_OriginalSkin.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.gradienteFondo {
-    background-image: radial-gradient(hsla(0, 100%, 0%, 0), #111111);
-    height: 100%;
-}*/
 /* FOOTER */
 footer {
   background-color: #222222;
@@ -98,11 +78,6 @@ nav .botonNav {
 }
 nav .navbar-toggler:focus {
   box-shadow: none;
-}
-
-/* IFRAMES */
-div .videos {
-  border: 2px solid #f5f5f5;
 }
 
 /* ANIMACION */
@@ -166,6 +141,13 @@ div #carouselExampleFade {
   border: 1px solid #ffd700;
 }
 
+.carousel-item h5 {
+  color: #ffd700;
+  background-color: rgba(17, 17, 17, 0.7);
+  width: 40%;
+  border: 1px solid #ffd700;
+}
+
 /* FORMULARIO */
 form .checkForm:checked {
   background-color: #ffd700;
@@ -182,6 +164,16 @@ form .botonForm:hover {
   color: #111111;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/** INDEX **/
+.contenedorVideos iframe {
+  width: 944px;
+  height: 531px;
+}
+
+.contenedorVideos .videos {
+  border: 2px solid #f5f5f5;
 }
 
 /*# sourceMappingURL=styles.css.map */

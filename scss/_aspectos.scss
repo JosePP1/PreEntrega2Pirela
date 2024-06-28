@@ -3,3 +3,10 @@
 div #carouselExampleFade {
     border: 1px solid $secondaryColor;
 }
+
+.carousel-item h5 {
+    color: $secondaryColor;
+    background-color: $quinquinaryColor;
+    width: 40%;
+    border: 1px solid $secondaryColor;
+}
