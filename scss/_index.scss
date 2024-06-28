@@ -1,10 +1,17 @@
 /** INDEX **/
 
 .contenedorVideos iframe {
-    width: 944px;
-    height: 531px;
+    width: 640px;
+    height: 350px;
 }
 
 .contenedorVideos .videos {
     border: 2px solid $tertiaryColor;
 }
+
+@media screen and (max-width: 768px) {
+    .contenedorVideos iframe {
+        width: 300px;
+        height: 175px;
+    }
+  }
